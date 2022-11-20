@@ -43,10 +43,6 @@ body {
    padding-bottom: 94px;
 }
 
-.footer-section {
-   padding-top: 60px;
-   padding-bottom: 60px;
-}
 /* -----------------------UTILITS------------------ */
 h1,
 h2,
@@ -83,7 +79,7 @@ img {
 /* ---------------------HEADER--------------------- */
 .header {
    background-color: var(--main-usual-color);
-   border: 1px solid var(--header-border-color);
+   border-bottom: 1px solid var(--header-border-color);
 }
 
 .header-nav {
@@ -226,8 +222,8 @@ img {
    background-color: var(--main-usual-color);
 }
 
-.benefits-box {
-   padding-top: 94px;
+.work-section {
+   padding-top: 0;
 }
 
 .benefits-list {
@@ -299,13 +295,17 @@ img {
    margin-bottom: 50px;
 }
 
+.member-text {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
 .member-name {
    color: var(--first-title-color);
    font-weight: 500;
    font-size: 16px;
    line-height: 1.2;
    letter-spacing: 0.03em;
-   padding-top: 30px;
    margin-bottom: 10px;
    text-align: center;
 }
@@ -315,20 +315,21 @@ img {
    font-size: 16px;
    line-height: 1.2;
    letter-spacing: 0.03em;
-   padding-bottom: 30px;
 }
 
 .teams-member {
    flex-basis: calc(100% / 4 - 30px);
    width: 270px;
-   height: 368px;
    text-align: center;
+   background-color: var(--main-usual-color);
+   /* outline: 1px solid teal; */
+}
+
+.teams-member:hover,
+.teams-member:focus {
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
-
-   background-color: var(--main-usual-color);
-   /* outline: 1px solid teal; */
 }
 
 .team-list > .item:not(:last-child) {
@@ -339,6 +340,8 @@ img {
 
 .footer {
    background-color: var(--first-bcg-color);
+   padding-top: 60px;
+   padding-bottom: 60px;
 }
 .footer-logo {
    display: inline-block;
@@ -396,8 +399,6 @@ img {
 
 .btn-item {
    padding: 6px 22px;
-   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
    border-radius: 4px;
    margin-right: 8px;
 
@@ -416,6 +417,12 @@ img {
 
 .btn-item:hover,
 .btn-item:focus {
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-item:hover,
+.btn-item:focus {
    color: var(--main-usual-color);
    background-color: var(--main-accent-color);
 }
@@ -430,11 +437,7 @@ img {
 }
 
 .example-list > .item {
-   display: block;
-   margin: 0;
-   padding: 0;
    flex-basis: calc(100% / 3);
-   display: block;
    flex-basis: calc((100% - 60px) / 3);
    margin-right: 30px;
    margin-bottom: 30px;
@@ -469,8 +472,8 @@ img {
 }
 
 .example-text {
+   max-width: 370px;
    padding: 20px 24px;
-   width: 370px;
    border-bottom: 1px solid var(--header-border-color);
    border-left: 1px solid var(--header-border-color);
    border-right: 1px solid var(--header-border-color);
