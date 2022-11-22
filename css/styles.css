@@ -224,6 +224,7 @@ img {
 
 .work-section {
    padding-top: 0;
+   padding-bottom: 94px;
 }
 
 .benefits-list {
@@ -458,7 +459,7 @@ img {
    line-height: 2;
    letter-spacing: 0.06em;
    width: 370px;
-   margin: 0;
+   margin-bottom: 4px;
    padding: 0;
 }
 
